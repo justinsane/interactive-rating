@@ -16,8 +16,11 @@ module.exports = {
         sans: ["Overpass", "sans-serif"],
       },
       height: {
-        'custom-26em': '26em',
+        "custom-26em": "26em",
         108: "27rem",
+      },
+      screens: {
+        "sm-375": { max: "375px" },
       },
       plugins: [],
     },
