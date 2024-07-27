@@ -48,14 +48,16 @@ Users should be able to:
 
 I'm not sure if I set up the main container correctly. I used a fixed height so when a rating is submitted the card's height doesn't change.
 
-````html
+```jsx
 return (
-    <div className="h-custom-26em relative m-4 max-w-md rounded-3xl bg-dark-blue p-8 text-white">
+<div
+  className="h-custom-26em relative m-4 max-w-md rounded-3xl bg-dark-blue p-8 text-white"
+></div>
 ```
 
 It took me a while to figure out how to make the semi-transparent circle work. I used relative and absolute positioning to achieve this. Next time I will try to use a different approach to make it work.
 
-```html
+```jsx
 <div className="flex justify-between">
           {[...Array(5).keys()].map((_, index) => {
             const value = index + 1;
@@ -81,7 +83,7 @@ It took me a while to figure out how to make the semi-transparent circle work. I
                   {value}
                 </p>
               </button>
-````
+```
 
 ### Continued development
 
